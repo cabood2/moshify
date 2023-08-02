@@ -677,8 +677,32 @@ a {
   transform: scale(1.15);
 }
 
-@media screen and (min-width: 1024px) {
-  .block-plan {
-    max-width: 1100px;
+/* Feature */
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+.feature__heading {
+  margin: 1rem 0;
+  font-size: 2.4rem;
+}
+.feature__body {
+  font-size: 1.8rem;
+  color: #918ca4;
+  margin-bottom: 1rem;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
   }
 }
+
+/* Showcase Block */
